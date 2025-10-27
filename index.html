@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InspireVerse — Daily Motivation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">IV</div>
+        <div class="brand-text">
+          <h1>InspireVerse</h1>
+          <p class="byline">by Nithin Rathod</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button id="refreshBtn" aria-label="Refresh">⟳</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card quote-card" aria-live="polite">
+        <div class="card-head">
+          <h2>✨ Quote of the Moment</h2>
+          <small id="quoteTag">Stay inspired • refresh anytime</small>
+        </div>
+        <blockquote id="quote" class="quote">Loading inspiring words...</blockquote>
+        <div id="quoteAuthor" class="author"></div>
+        <div class="card-row">
+          <button id="newQuote" class="btn primary">New Quote</button>
+          <button id="tweetQuote" class="btn">Share</button>
+        </div>
+      </section>
+
+      <section class="card weather-card">
+        <div class="card-head">
+          <h2>🌤 Local Weather</h2>
+          <small id="weatherTag">Auto-detected (or fallback)</small>
+        </div>
+        <div class="weather-main">
+          <div class="temp" id="temp">--°C</div>
+          <div class="weather-info">
+            <div id="weatherDesc">—</div>
+            <div id="location">Detecting location...</div>
+            <div class="meta"><span>Wind: <span id="wind">--</span></span> • <span id="time">--</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card vibe-card">
+        <div class="card-head"><h2>🎨 Choose a Vibe</h2><small>Change accent & motion</small></div>
+        <div class="vibes">
+          <button class="vibe" data-vibe="sunset">Sunset</button>
+          <button class="vibe" data-vibe="neon">Neon</button>
+          <button class="vibe" data-vibe="ocean">Ocean</button>
+          <button class="vibe" data-vibe="forest">Forest</button>
+        </div>
+        <div class="vibe-preview">Active: <span id="activeVibe">Sunset</span></div>
+      </section>
+    </main>
+
+    <footer class="foot">© 2025 InspireVerse • Built with ❤️ • Responsive & Animated</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
